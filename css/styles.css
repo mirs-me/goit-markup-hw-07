@@ -705,7 +705,7 @@ display: none;
             max-width: 768px;
             height: 436px;
         }
-        
+
     .hero-section-title {
                     color: var(--white);
                     font-size: 56px;
@@ -1035,6 +1035,7 @@ display: none;
     }
 }
 @media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero-section {

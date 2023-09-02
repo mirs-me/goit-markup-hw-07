@@ -18,16 +18,58 @@
         <div class="container nav-wrapper">
             <nav class="nav-bar">
                 <a href="./" class="logo"><span class="logo-blue-web">Web</span>Studio</a>
-                    <ul class="navigation">
-                        <li> <a class="navigation-item current-window" href="./index.html">Studio</a></li>
-                        <li> <a class="navigation-item" href="./portfolio.html">Portfolio</a></li>
-                        <li> <a class="navigation-item" href="./">Contacts</a></li>
+                <button class="nav-button js-open-menu"> 
+                        <svg width="22" height="22">
+                            <use href="./images/icons.svg#icon-menu-hamburger" />
+                        </svg>
+                </button>
+                <div class="mobile-menu js-menu-container">
+                    <button class="menu-button js-close-menu">
+                        <svg width="8" height="8">
+                            <use href="./images/icons.svg#icon-close-black-18dp" />
+                        </svg>
+                    </button>
+                    <ul class="menu">
+                        <li> <a class="mob-navigation-item current-window" href="./index.html">Studio</a></li>
+                        <li> <a class="mob-navigation-item" href="./portfolio.html">Portfolio</a></li>
+                        <li> <a class="mob-navigation-item" href="./">Contacts</a></li>
                     </ul>
+                    <address class="mob-menu-contacts">
+                        <ul class="mob-menu-contacts-list">
+                            <li> <a class="mob-menu-tel" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                            <li> <a class="mob-menu-email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        </ul>
+                    </address>
+                    <ul class="mob-menu-socials-list">
+                        <li> <a class="mob-menu-icons" href="./">
+                                <svg width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram-2" />
+                                </svg></a></li>
+                        <li> <a class="mob-menu-icons" href="./">
+                                <svg width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                                </svg></a></li>
+                        <li> <a class="mob-menu-icons" href="./">
+                                <svg width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                                </svg></a></li>
+                        <li> <a class="mob-menu-icons" href="./">
+                                <svg width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+                <ul class="navigation">
+                    <li> <a class="navigation-item current-window" href="./index.html">Studio</a></li>
+                    <li> <a class="navigation-item" href="./portfolio.html">Portfolio</a></li>
+                    <li> <a class="navigation-item" href="./">Contacts</a></li>
+                </ul>
             </nav>
-             <address class="contacts">   <ul class="contacts-list">
-                <li> <a class="contacts-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li> <a class="contacts-item" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-            </ul>
+            <address class="contacts">   
+                <ul class="contacts-list">
+                    <li> <a class="contacts-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li> <a class="contacts-item" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                </ul>
             </address>
         </div>
     </header>
@@ -121,9 +163,9 @@
             <div class="container our-work-wrapper">
             <h2 class="our-work-title"> What Are We Doing</h2>
             <ul class="our-work-list">
-                <li class="our-work-list-item"><img src="images/pc1.jpg" alt="monitor with web page open" width="360"/></li>
-                <li class="our-work-list-item"><img src="images/mob1.jpg" alt="mobile phone with several app screens" width="360" /></li>
-                <li class="our-work-list-item"><img src="images/mob2.jpg" alt="hand holding phone and laptop in the background" width="360"/></li>
+                <li class="our-work-list-item"><a href="#"><img srcset="./images/pc1.jpg 1x, ./images/pc-2x.jpg 2x" src="images/pc1.jpg" alt="monitor with web page open" width="360"/></a></li>
+                <li class="our-work-list-item"><a href="#"><img srcset="./images/mob1.jpg 1x, ./images/mob1-2x.jpg 2x" src="images/mob1.jpg" alt="mobile phone with several app screens" width="360" /></a></li>
+                <li class="our-work-list-item"><a href="#"><img srcset="./images/mob2-2x.jpg 2x, ./images/mob2.jpg 1x" src="images/mob2.jpg" alt="hand holding phone and laptop in the background" width="360"/></a></li>
             </ul>
             </div>
         </section>
@@ -132,7 +174,7 @@
             <h2 class="team-title">Our Team</h2>
             <ul class="team-list">
                 <li class="team-list-item">
-                    <img class="member-image no-gap" src="images/mg.jpg" alt="bearded guy" width="264" />
+                    <img class="member-image no-gap" srcset="images/mg-2x.jpg 2x, images/mg.jpg 1x" src="images/mg.jpg" alt="bearded guy" width="264" />
                     <div class="member-card">    
                         <h3 class="team-member-name">Mark Guerrero</h3>
                         <p class="team-member-position">Product Designer</p>
@@ -157,7 +199,7 @@
                     </div>
                 </li>
                 <li class="team-list-item">
-                    <img class="member-image no-gap" src="images/tf.jpg" alt="youg guy looking to the left" width="264"/>
+                    <img class="member-image no-gap" srcset="images/tf-2x.jpg 2x, images/tf.jpg 1x" src="images/tf.jpg" alt="youg guy looking to the left" width="264"/>
                     <div class="member-card">    
                         <h3 class="team-member-name">Tom Ford</h3>
                         <p class="team-member-position">Frontend Developer</p>
@@ -182,7 +224,7 @@
                     </div>
                 </li>
                 <li class="team-list-item">
-                    <img class="member-image no-gap" src="images/cg.jpg" alt="young smiling woman with long brown hair" width="264" />
+                    <img class="member-image no-gap" srcset="images/cg-2x.jpg 2x, images/cg.jpg 1x" src="images/cg.jpg" alt="young smiling woman with long brown hair" width="264" />
                     <div class="member-card">    
                         <h3 class="team-member-name">Camila Garcia</h3>
                         <p class="team-member-position">Marketing</p>
@@ -207,7 +249,7 @@
                     </div>
                 </li>
                 <li class="team-list-item">
-                    <img class="member-image no-gap" src="images/dw.jpg" alt="young guy short beard smiling" width="264" />        
+                    <img class="member-image no-gap" srcset="images/dw-2x.jpg 2x, images/dw.jpg 1x" src="images/dw.jpg" alt="young guy short beard smiling" width="264" />        
                     <div class="member-card">    
                         <h3 class="team-member-name">Daniel Wilson</h3>
                         <p class="team-member-position">UI Designer</p>
@@ -306,5 +348,9 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>

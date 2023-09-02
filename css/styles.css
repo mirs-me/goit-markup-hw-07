@@ -68,7 +68,7 @@ svg {
 .mobile-menu {
     position: fixed;
     inset: 0;
-    translate: -100% 0 0;
+    translate: -150% 0 0;
     transition: translate 400ms;
     background-color: var(--white);
     padding: 80px 35px 40px 40px ;

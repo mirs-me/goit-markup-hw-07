@@ -702,10 +702,10 @@ display: none;
                                     border-radius: 2px;
                                 }
     .hero-section {
-            background-image: linear-gradient(0, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/people-office-2x.jpg');
             max-width: 768px;
             height: 436px;
         }
+        
     .hero-section-title {
                     color: var(--white);
                     font-size: 56px;
@@ -717,6 +717,7 @@ display: none;
                     margin: auto;
                 }
     .order-button { margin: 36px auto 0 auto;}
+
     .values-list {
             flex-wrap: wrap;
             flex-direction: row;
@@ -730,7 +731,6 @@ display: none;
             width: 356px;
         }
         
-
     .team-list {    display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
@@ -738,7 +738,6 @@ display: none;
                     justify-content: center;
                 }
 
-    
     .customers-list {
             gap: 72px 24px;
         }
@@ -775,9 +774,6 @@ display: none;
     .subscribe-button {
                     display: inline-flex;
                 }
-
-
-
 }
 
 @media screen and (min-width: 1158px) {
@@ -869,7 +865,6 @@ display: none;
             border-radius: 2px;
         }
     .hero-section {
-            background-image: linear-gradient(0, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/people-office-2x.jpg');
             padding: 188px;
             max-width: 1440px;
             height: 600px;
@@ -963,7 +958,7 @@ display: none;
             gap: 24px;
         }
     
-        .customers-list-item {
+    .customers-list-item {
             width: 168px;
             transition-property: color;
             transition-duration: var(--default-time);
@@ -971,7 +966,7 @@ display: none;
         }
 
     
-        .customers-list-item:hover,
+    .customers-list-item:hover,
         .customers-list-item:focus {
             color: var(--ocean);
         }
@@ -1027,18 +1022,26 @@ display: none;
     display: flex;
     }
 
-.subscribe-button {
+    .subscribe-button {
     cursor: pointer;
     transition-property: background-color;
     transition-duration: var(--default-time);
     transition-timing-function: var(--default-timing-function);
+    }
+
+    .subscribe-button:hover,
+    .subscribe-button:focus {
+    background-color: var(--ocean);
+    }
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-section {
+        background-image: linear-gradient(0, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/people-office-2x.jpg');
+    }
 }
 
-.subscribe-button:hover,
-.subscribe-button:focus {
-    background-color: var(--ocean);
-}
-                    }
 .visually-hidden {
     position: absolute;
     width: 1px;

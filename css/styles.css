@@ -758,14 +758,14 @@ display: none;
                 flex-direction: row;
                 gap: 72px 24px;
                 align-items: flex-start;
-                justify-content: flex-start;
+                justify-content: center;
                 flex-wrap: wrap;
-                margin-left:108px;
+                
                 }
     
     .footer-column{ align-items: flex-start;}
 
-        
+    .footer-subscribe { margin-left: -32px;}    
     .email-input {
                     width: 264px;
                     margin-right: 24px;
